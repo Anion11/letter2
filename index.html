@@ -25,6 +25,11 @@ html { -webkit-text-size-adjust:none; -ms-text-size-adjust: none;}
     .mob_width{
         width:280px !important;
     }
+    .mob_89 {
+        width: 89% !important;
+        max-width: 89% !important;
+        min-width: 320px !important;
+    }
     .mob_first_card_font1 {
         font-size: 20px !important;
         line-height: 26px !important;
@@ -37,6 +42,13 @@ html { -webkit-text-size-adjust:none; -ms-text-size-adjust: none;}
         font-size: 18px !important;
         line-height: 26px !important;
     }
+    .mob_header_footer{
+        width: 78% !important;
+    }
+    .mob_header_font1{
+        font-size: 32px !important;
+        line-height: 40px !important;
+    }
     .mob_last_card_font {
         font-size: 24px !important;
         line-height: 32px !important;
@@ -48,16 +60,26 @@ html { -webkit-text-size-adjust:none; -ms-text-size-adjust: none;}
     .mob_pict_last_cart {
         max-width: 120px !important;
     }
-    .mob_btn {
-        height: 60px !important;
-        line-height: 60px !important;
-        font-size: 18px !important;
-        border-radius: 8px !important;
+    .footer_mobfont1{
+        font-size: 20px !important;
+        line-height: 26px !important;
     }
     .mob_txt {
         width: 83% !important;
         max-width: 560px !important;
         min-width: 280px !important;
+    }
+    .mob_font_footer{
+        font-size: 20px !important;
+        line-height: 26px !important;
+    }
+    .mob_font_footer1{
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+     .mob_font_footer2{
+        font-size: 14px !important;
+        line-height: 20px !important;
     }
     .mob_br {
         border-radius: 24px !important;
@@ -67,7 +89,7 @@ html { -webkit-text-size-adjust:none; -ms-text-size-adjust: none;}
     }
     .mob_card_width {
         width: 89% !important;
-        max-width: 89% !important;
+        max-width: 80% !important;
         min-width: 320px;
     }
 
@@ -100,43 +122,50 @@ html { -webkit-text-size-adjust:none; -ms-text-size-adjust: none;}
                                             <!-- header -->
                                             <tr>
                                                 <td align="center">
-                                    <!-- padding --><div style="height:24px; line-height:24px;">&nbsp;</div>
-                                    <!-- padding --><div class ="mob_hidden" style="height:12px; line-height:12px;">&nbsp;</div> 
-                                                    <table width = "84%" align="center" border="0" cellspacing="0" cellpadding="0" style="max-width: 480px; min-width: 248px;">
-                                                        <tr>
-                                                            <td class="mob_hidden" align="left" valign="top">
-                                                                <span style="font-size:20px; font-family:'MailSans',Helvetica,Arial,Tahoma,Verdana,sans-serif;color:#919399;line-height:28px; text-decoration: none; vertical-align: middle;">
-                                                                        {% if profile.firstname|length > 1 and profile.firstname|length < 15 %}Здравствуйте, {{profile.firstname}}! {% else %} Здравствуйте! {% endif %}
-                                                                </span>  
-                                                            </td>
-                                                            <td width="128" align="left" valign="middle">
-                                                                <a href="#" style="font-size:20px; font-family:&apos;MailSans&apos;,Helvetica,Arial,Tahoma,Verdana,sans-serif;color:#bce3ff; text-decoration: none;" target="_blank"><img src="img/hi-tech_logo_touch.png" width="128" height="28" style="display: inline-block; border: none;" alt="@спорт" /></a>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
                                     <!-- padding --><div style="height:23px; line-height:23px;">&nbsp;</div>
                                     <!-- padding --><div class ="mob_hidden" style="height:5px; line-height:5px;">&nbsp;</div> 
                                                     <table width="83%" align="center" border="0" cellspacing="0" cellpadding="0" style="max-width: 480px; min-width: 248px;">
+                                                    <table class="mob_card_width" align="center" width="96%" border="0" cellspacing="0" cellpadding="0" style="max-width: 576px; min-width: 248px;">
                                                         <tr>
                                                             <td align="left">
-                                                                <span class="mob_header_font1" style="font-family: 'Mail Sans Roman', sans-serif;font-style: normal;font-weight: 500;font-size: 48px;line-height: 56px;color: #2C2D2E;">
-                                                                    Распродажа: самые выгодные покупки этого года
-                                                                </span>
+                                                                <table align="center" border="0" cellspacing="0" cellpadding="0" style="max-width: 480px; min-width: 248px; width: 83%;">
+                                                                    <tr>
+                                                                        <td class="mob_hidden" align="left" valign="top">
+                                                                            <span style="font-size:20px; font-family:'MailSans',Helvetica,Arial,Tahoma,Verdana,sans-serif;color:#919399;line-height:28px; text-decoration: none; vertical-align: middle;">
+                                                                                    {% if profile.firstname|length > 1 and profile.firstname|length < 15 %}Здравствуйте, {{profile.firstname}}! {% else %} Здравствуйте! {% endif %}
+                                                                            </span>  
+                                                                        </td>
+                                                                        <td width="128" align="left" valign="middle">
+                                                                            <a href="#" style="font-size:20px; font-family:&apos;MailSans&apos;,Helvetica,Arial,Tahoma,Verdana,sans-serif;color:#bce3ff; text-decoration: none;" target="_blank"><img src="img/hi-tech_logo_touch.png" width="128" height="28" style="display: inline-block; border: none;" alt="@спорт" /></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                <!-- padding --><div style="height:23px; line-height:23px;">&nbsp;</div>
+                                                <!-- padding --><div class ="mob_hidden" style="height:5px; line-height:5px;">&nbsp;</div> 
+                                                                <table align="center" border="0" cellspacing="0" cellpadding="0" style="max-width: 480px; min-width: 248px; width:83%;">
+                                                                    <tr>
+                                                                        <td align="left">
+                                                                            <span class="mob_header_font1" style="font-family: 'Mail Sans Roman', sans-serif;font-style: normal;font-weight: 500;font-size: 48px;line-height: 56px;color: #2C2D2E;">
+                                                                                Распродажа: самые выгодные покупки этого года
+                                                                            </span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>               
                                                             </td>
                                                         </tr>
-                                                    </table>                                               
+                                                    </table>                
                                     <!-- padding --><div style="height:20px; line-height:20px;">&nbsp;</div>
                                     <!-- padding --><div class ="mob_hidden" style="height:12px; line-height:12px;">&nbsp;</div> 
                                                     <!-- header END -->
                                                     <!-- FirstCard -->
-                                                    <table width="96%" align="center" border="0" cellspacing="0" cellpadding="0" style="max-width: 576px; min-width: 248px;">
+                                                    <table class = "mob_89" width="96%" align="center" border="0" cellspacing="0" cellpadding="0" style="max-width: 576px; min-width: 320px;">
                                                         <tr>
                                                             <td bgcolor="#ffffff" style="border-radius: 32px;overflow: hidden;">
-                                                                <table width = "100%" cellspacing = "0" cellpadding = "0" style="max-width: 576px; min-width: 248px;">
+                                                                <table width = "100%" cellspacing = "0" cellpadding = "0" style="max-width: 576px; min-width: 320px;">
                                                                     <tr>
                                                                         <td align="center">
                                                                             <a href = "#" style="text-decoration: none;">
-                                                                                <img src = "img/FirstCard.png" width="100%" style="display:inline-block; max-width: 576px;min-width: 248px;" alt="">
+                                                                                <img src = "img/FirstCard.png" width="100%" style="display:inline-block; max-width: 576px;min-width: 320px;" alt="">
                                                                             </a>
                                                                         </td>                 
                                                                     </tr>
@@ -180,93 +209,133 @@ html { -webkit-text-size-adjust:none; -ms-text-size-adjust: none;}
                                                     <!-- FirstCard END-->
                                     <!-- padding --><div style="height:24px; line-height:24px;">&nbsp;</div>
                                     <!-- padding --><div class ="mob_hidden" style="height:8px; line-height:8px;">&nbsp;</div> 
-                                                <!--footer-->
-                                                <table align="center" width = "84%" border="0" cellspacing = "0" cellpadding = "0" style="max-width: 480px; min-width: 248px;">
-                                                    <tr>
-                                                        <td align="left">
-                                                            <span class="mob_font_footer" style="font-family: 'Mail Sans Roman',sans-serif; font-size: 28px; line-height: 38px; font-weight: 500; color: #2C2D2E;">Желаем вам удачных покупок!</span>
-                                                                <!--padding-->
-                                                            <!--padding--><div style="height: 16px;line-height: 16px;">&nbsp;</div>
-                                                            <!--padding--><div class = "mob_hidden" style="height: 8px;line-height: 8px;">&nbsp;</div>
-                                                                <table align="center" width = "100%" border="0" cellspacing = "0" cellpadding = "0" style="border-collapse: collapse;">
+                                              
+                                                    <!-- LastCard -->
+                                                    <table class="mob_card_width" align="center" width="96%" border="0" cellspacing="0" cellpadding="0" style="max-width: 576px; min-width: 320px; border-radius: 32px; background: #FFFFFF;">
+                                                        <tr>
+                                                            <td class="mob_tr" bgcolor="#ffffff" style="border-radius:32px; overflow:hidden;">
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                                                     <tr>
-                                                                        <td align="left" valign = "top"> 
-                                                                            <div style="display: inline-block; width: 100%;max-width:390px;min-width:248px;">
-                                                                                <table width = "60%" border="0" cellspacing = "0" cellpadding = "0" style="border-collapse: collapse;">
-                                                                                    <tr>
-                                                                                        <td align="left">       
-                                                                                            <span class="mob_font_footer1" style="font-family: 'Mail Sans Roman',sans-serif; font-size: 15px; line-height: 22px; font-weight: 400; color: #919399;">Следите за нашими новостями в социальных сетях</span>         
-                                                                                            <!--padding-->
-                                                                                            <div  style="height: 16px; line-height: 16px;">&nbsp;</div>
-                                                                                        </td>
-                                                                                    </tr> 
-                                                                                </table>    
-                                                                            </div>
-                                                                                                    
-                                                                            <div style="display:inline-block;vertical-align:top;width:80px;">
-                                                                                <table width = "100%" border="0" cellspacing = "0" cellpadding = "0" style="border-collapse: collapse;">
-                                                                                    <tr>
-                                                                                        <td align="left" valign = "middle">
-                                                                                            <table width = "36" border="0" cellspacing = "0" cellpadding = "0" style="border-collapse: collapse;">
-                                                                                                <tr>
-                                                                                                    <td>  
-                                                                                                        <a href = '#' style="text-decoration:none;display: inline-block;">
-                                                                                                                    <img src = "Img/social button (1).png" alt=""  style=" width: 36px;">
-                                                                                                        </a>
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </table>
-                                                                                            <!--padding-->
-                                                                                            <div  style="height: 8px; line-height: 8px;">&nbsp;</div>
-                                                                                        </td>
-                                                                                        <td>         <!--padding-left-->
-                                                                                            <div style="display: inline-block; width: 8px;"></div>
-                                                                                        </td>
-                                                                                        <td>
-                                                                                            <table width = "36" border="0" cellspacing = "0" cellpadding = "0" style="border-collapse: collapse;">
-                                                                                                <tr>
-                                                                                                    <td>          
-                                                                                                        <a href = '#' style="text-decoration:none;display: inline-block;">
-                                                                                                                    <img src = "Img/social button1 (1).png" alt=""  style=" width: 36px;">
-                                                                                                        </a>
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </table>  
-                                                                                            <!--padding-->
-                                                                                            <div  style="height: 8px; line-height: 8px;">&nbsp;</div>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </div>
+                                                                        <td align="center" style="">
+                                                                            <img src="Img/clock.png" style="max-width: 576px; min-width: 320px;display: inline-block; border: none;" alt=" " width="100%">
                                                                         </td>
                                                                     </tr>
                                                                 </table>
-                                                            </div>    
-                                                            <!--padding-->
-                                                            <div style="height: 8px; line-height: 8px;">&nbsp;</div>
-                                                            <table width = "100%" border="0" cellspacing = "0" cellpadding = "0" style="border-collapse: collapse;">
-                                                                <tr>
-                                                                    <td align = "left" width = 80%>
-                                                                        <span class="mob_font_footer1" style="font-family: 'Arial',sans-serif; font-size: 15px; line-height: 22px; font-weight: 400; color: #919399;">Copyright Mail.ru Group, Москва — Все права защищены.<br>
-                                                                            Вы получили это письмо, потому что являетесь пользователем Сервиса Здоровье Mail.ru на основании Пользовательского соглашя</span>         
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                            <!--padding--><div style="height: 16px;line-height: 16px;">&nbsp;</div>
-                                                            <!--padding--><div class = "mob_hidden" style="height: 8px;line-height: 8px;">&nbsp;</div>
-                                                            <span style="font-family:'Arial',sans-serif;font-size: 15px;line-height: 22px;font-weight: 400;">
-                                                                <a href = "#" style="text-decoration: none;color: #005BD1;">Отписаться</a>
-                                                                &nbsp;&nbsp;&nbsp;&nbsp;
-                                                                <a href = "#" style="text-decoration: none;color: #005BD1;">Служба поддержки</a>
-                                                            </span>
-                                                            <!--padding--><div style="height: 18px;line-height: 18px;">&nbsp;</div>
-                                                            <!--padding--><div class = "mob_hidden" style="height: 8px;line-height: 8px;">&nbsp;</div>
-                                                            <a href = "#" style="text-decoration: none;">
-                                                                <img src="img/logo-footer-mail (1) (1).png" alt="" style="width: 96px; height: 36px; border: none; display: block;">
-                                                            </a>
-                                                        </td>  
-                                                    </tr>
-                                                </table>  <!--footer END-->  
+                                                <!-- padding --><div style="height:20px; line-height:20px;">&nbsp;</div>
+                                                <!-- padding --><div class ="mob_hidden" style="height:20px; line-height:20px;">&nbsp;</div> 
+                                                                <table align="center" width="83%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr>
+                                                                        <td align="left">
+                                                                            <span class="footer_mobfont1" style="display: ;font-family: 'Mail Sans Roman', sans-serif;font-style: normal;font-weight: 500;font-size: 28px;line-height: 36px;color: #2C2D2E;">
+                                                                                Нашли неубиваемые смарт-часы «Танк». Они в 10 раз дешевле Apple Watch Ultra
+                                                                            </span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>    
+                                                    </table>
+                                                    <!-- LastCard END-->
+                                    <!-- padding --><div style="height:24px; line-height:24px;">&nbsp;</div>
+                                    <!-- padding --><div class ="mob_hidden" style="height:8px; line-height:8px;">&nbsp;</div> 
+                                                    <!--footer-->
+                                                     <table class="mob_card_width" align="center" width="96%" border="0" cellspacing="0" cellpadding="0" style="max-width: 576px; min-width: 248px;">
+                                                        <tr>
+                                                            <td align="left">                                        
+                                                                        <table align="center" width = "84%" border="0" cellspacing = "0" cellpadding = "0" style="max-width: 480px; min-width: 248px;">
+                                                                                <tr>
+                                                                                    <td align="left">
+                                                                                        <span class="mob_font_footer" style="font-family: 'Mail Sans Roman',sans-serif; font-size: 28px; line-height: 38px; font-weight: 500; color: #2C2D2E;">Желаем вам удачных покупок!</span>
+                                                                                            <!--padding-->
+                                                                                        <!--padding--><div style="height: 16px;line-height: 16px;">&nbsp;</div>
+                                                                                        <!--padding--><div class = "mob_hidden" style="height: 8px;line-height: 8px;">&nbsp;</div>
+                                                                                            <table align="center" width = "100%" border="0" cellspacing = "0" cellpadding = "0" style="border-collapse: collapse;">
+                                                                                                <tr>
+                                                                                                    <td align="left" valign = "top"> 
+                                                                                                        <div style="display: inline-block; width: 100%;max-width:390px;min-width:248px;">
+                                                                                                            <table width = "60%" border="0" cellspacing = "0" cellpadding = "0" style="border-collapse: collapse;">
+                                                                                                                <tr>
+                                                                                                                    <td align="left">       
+                                                                                                                        <span class="mob_font_footer1" style="font-family: 'Mail Sans Roman',sans-serif; font-size: 15px; line-height: 22px; font-weight: 400; color: #919399;">Следите за нашими новостями в социальных сетях</span>         
+                                                                                                                        <!--padding-->
+                                                                                                                        <div  style="height: 16px; line-height: 16px;">&nbsp;</div>
+                                                                                                                    </td>
+                                                                                                                </tr> 
+                                                                                                            </table>    
+                                                                                                        </div>
+                                                                                                                                
+                                                                                                        <div style="display:inline-block;vertical-align:top;width:80px;">
+                                                                                                            <table width = "100%" border="0" cellspacing = "0" cellpadding = "0" style="border-collapse: collapse;">
+                                                                                                                <tr>
+                                                                                                                    <td align="left" valign = "middle">
+                                                                                                                        <table width = "36" border="0" cellspacing = "0" cellpadding = "0" style="border-collapse: collapse;">
+                                                                                                                            <tr>
+                                                                                                                                <td>  
+                                                                                                                                    <a href = '#' style="text-decoration:none;display: inline-block;">
+                                                                                                                                                <img src = "Img/social button (1).png" alt=""  style=" width: 36px;">
+                                                                                                                                    </a>
+                                                                                                                                </td>
+                                                                                                                            </tr>
+                                                                                                                        </table>
+                                                                                                                        <!--padding-->
+                                                                                                                        <div  style="height: 8px; line-height: 8px;">&nbsp;</div>
+                                                                                                                    </td>
+                                                                                                                    <td>         <!--padding-left-->
+                                                                                                                        <div style="display: inline-block; width: 8px;"></div>
+                                                                                                                    </td>
+                                                                                                                    <td>
+                                                                                                                        <table width = "36" border="0" cellspacing = "0" cellpadding = "0" style="border-collapse: collapse;">
+                                                                                                                            <tr>
+                                                                                                                                <td>          
+                                                                                                                                    <a href = '#' style="text-decoration:none;display: inline-block;">
+                                                                                                                                                <img src = "Img/social button1 (1).png" alt=""  style=" width: 36px;">
+                                                                                                                                    </a>
+                                                                                                                                </td>
+                                                                                                                            </tr>
+                                                                                                                        </table>  
+                                                                                                                        <!--padding-->
+                                                                                                                        <div  style="height: 8px; line-height: 8px;">&nbsp;</div>
+                                                                                                                    </td>
+                                                                                                                </tr>
+                                                                                                            </table>
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </div>    
+                                                                                        <!--padding-->
+                                                                                        <div style="height: 8px; line-height: 8px;">&nbsp;</div>
+                                                                                        <table width = "100%" border="0" cellspacing = "0" cellpadding = "0" style="border-collapse: collapse;">
+                                                                                            <tr>
+                                                                                                <td align = "left" width = 80%>
+                                                                                                    <span class="mob_font_footer1" style="font-family: 'Arial',sans-serif; font-size: 15px; line-height: 22px; font-weight: 400; color: #919399;">Copyright Mail.ru Group, Москва — Все права защищены.<br>
+                                                                                                        Вы получили это письмо, потому что являетесь пользователем Сервиса Здоровье Mail.ru на основании Пользовательского соглашя</span>         
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                        <!--padding--><div style="height: 16px;line-height: 16px;">&nbsp;</div>
+                                                                                        <!--padding--><div class = "mob_hidden" style="height: 8px;line-height: 8px;">&nbsp;</div>
+                                                                                        <span style="font-family:'Arial',sans-serif;font-size: 15px;line-height: 22px;font-weight: 400;">
+                                                                                            <a href = "#" style="text-decoration: none;color: #005BD1;">Отписаться</a>
+                                                                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                                                                            <a href = "#" style="text-decoration: none;color: #005BD1;">Служба поддержки</a>
+                                                                                        </span>
+                                                                                        <!--padding--><div style="height: 18px;line-height: 18px;">&nbsp;</div>
+                                                                                        <!--padding--><div class = "mob_hidden" style="height: 8px;line-height: 8px;">&nbsp;</div>
+                                                                                        <a href = "#" style="text-decoration: none;">
+                                                                                            <img src="img/logo-footer-mail (1) (1).png" alt="" style="width: 96px; height: 36px; border: none; display: block;">
+                                                                                        </a>
+                                                                                    </td>  
+                                                                                </tr>
+                                                                            </table>  
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>  
+                                                        </tr>
+                                                    </table> 
+                                                    <!--footer END-->   
+                                      <!--padding--><div style="height: 40px;line-height: 40px;">&nbsp;</div>
                                                 </td>
                                             </tr>
                                         </table>       
